@@ -1,0 +1,25 @@
+{
+    "host": "47.52.63.21",
+    "port": 22,
+    "username": "root",
+    "password": "Csqcsq1214",
+    "protocol": "sftp",
+    "agent": null,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "passive": false,
+    "interactiveAuth": false,
+    "remotePath": "/html",
+    "uploadOnSave": true,
+    "syncMode": "update",
+    "watcher": {
+        "files": true,
+        "autoUpload": true,
+        "autoDelete": true
+    },
+    "ignore": [
+        "**/.vscode/**",
+        "**/.git/**",
+        "**/.DS_Store"
+    ]
+}
