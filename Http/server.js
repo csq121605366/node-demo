@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const url = require('url');
 
 
 const port = '80';
@@ -14,6 +15,8 @@ server.on('listening', err => {
 })
 server.on('request', (req, res) => {
     console.log('用户请求了');
+    let urlStr = url.parse(req.url);
+    console.log(urlStr);
     fs.readFile('../package.json', 'utf8', (err, data) => {
         if (err) {
             res.end(err.toString());
